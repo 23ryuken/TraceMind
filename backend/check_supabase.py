@@ -8,4 +8,5 @@ key = os.getenv("SUPABASE_KEY")
 
 client = create_client(url, key)
 
-client.table("nonexistent_table").select("*").execute()
+response = client.table("projects").select("*").execute()
+print(response.data)
