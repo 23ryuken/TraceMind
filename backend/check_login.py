@@ -19,5 +19,5 @@ print(response.session is not None)
 print(client.table("projects").select("*").execute().data)
 
 
-# client.table("projects").insert({"name": "From Python", "user_id": response.user.id}).execute()
 
+# client.table("projects").insert({"name": "From Python", "user_id": response.user.id}).execute()
